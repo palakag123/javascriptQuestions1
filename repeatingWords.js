@@ -14,15 +14,10 @@ function findRepeatingWords(sentence)
     }
     let val = Object.values(count);
 
-    for(key in count)
-    {
-        if(count[key] > 1)
-        {
-            return true
-        }
-    }
-    return false;
-
+    if(splitSentence.length>val.length)
+        console.log("There are repeating words");
+    else
+        console.log("There are no repeating words");
     
 }
 
